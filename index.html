@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App by Yash Sharma</title>
+</head>
+<body onload="geoFindMe()">
+    <div class="main">
+            <div class="search">
+                <input type="text" id="loc1" placeholder="Enter Location">
+                <button id="submit" onclick="weather.search()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </div>
+    
+        <div class="upper">
+            
+            <div class="info">
+                <label class="lables" id="precipitation">Precipitation: </label>
+                <label class="lables" id="humidity">Humidity: </label>
+                <label class="lables" id="wind">Wind: </label>
+            </div>
+
+            <div class="currentTemp">
+                <img src="" id="imgg">
+                <h1 id="cel">18</h1>
+                <h4>°C</h4>
+                
+                <h1 id="far">&nbsp;| 54</h1>
+                <h4>°F</h4>
+            </div>
+            
+            <div class="loc">
+                <label class="lables2"  id="place">location</label>
+                <label class="lables2"  id="dateTime">date/time</label>
+                <label class="lables2"  id="desc">description</label>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <div class="days">
+                <label id="day1"></label>
+                <img src="" class="foot" id="img1">
+            </div>
+            <div class="days">
+                <label id="day2"></label>
+                <img src="" class="foot" id="img2">
+            </div>
+            <div class="days">
+                <label id="day3"></label>
+                <img src="" class="foot" id="img3">
+            </div>
+            <div class="days">
+                <label id="day4"></label>
+                <img src="" class="foot" id="img4">
+            </div>
+            <div class="days">
+                <label id="day5"></label>
+                <img src="" class="foot" id="img5">
+            </div>
+            <div class="days">
+                <label id="day6"></label>
+                <img src="" class="foot" id="img6">
+            </div>
+            <div class="days">
+                <label id="day7"></label>
+                <img src="" class="foot" id="img7">
+            </div>
+            <div class="days">
+                <label id="day8"></label>
+                <img src="" class="foot" id="img8">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
